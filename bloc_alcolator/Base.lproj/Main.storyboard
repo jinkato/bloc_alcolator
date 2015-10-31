@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,47 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp0-gc-MFl">
-                                <rect key="frame" x="232" y="104" width="136" height="30"/>
-                                <state key="normal" title="Calculate!"/>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% Alcohol Content per Beer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Yv-8G-xaG">
-                                <rect key="frame" x="20" y="28" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="xTB-3J-pr3">
-                                <rect key="frame" x="18" y="66" width="564" height="31"/>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NU-Hx-13c">
-                                <rect key="frame" x="260" y="142" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="xTB-3J-pr3" firstAttribute="top" secondItem="4Yv-8G-xaG" secondAttribute="bottom" constant="8" id="4A7-0z-tTn"/>
-                            <constraint firstItem="4Yv-8G-xaG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5LO-Ur-Qvr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4NU-Hx-13c" secondAttribute="trailing" constant="15" id="6bf-1m-6Tg"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="4Yv-8G-xaG" secondAttribute="leading" id="EmK-nm-Jcf"/>
-                            <constraint firstItem="xTB-3J-pr3" firstAttribute="centerX" secondItem="4Yv-8G-xaG" secondAttribute="centerX" id="MPd-DI-LMd"/>
-                            <constraint firstItem="Dp0-gc-MFl" firstAttribute="centerX" secondItem="xTB-3J-pr3" secondAttribute="centerX" id="Mbn-MH-ESd"/>
-                            <constraint firstItem="4NU-Hx-13c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="Mqc-oG-j9a"/>
-                            <constraint firstItem="Dp0-gc-MFl" firstAttribute="top" secondItem="xTB-3J-pr3" secondAttribute="bottom" constant="8" id="Vlp-eK-Zdx"/>
-                            <constraint firstItem="4NU-Hx-13c" firstAttribute="top" secondItem="Dp0-gc-MFl" secondAttribute="bottom" constant="8" id="bhI-le-sdw"/>
-                            <constraint firstItem="4Yv-8G-xaG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fhx-uO-BkV"/>
-                            <constraint firstItem="xTB-3J-pr3" firstAttribute="width" secondItem="4Yv-8G-xaG" secondAttribute="width" id="pMg-w1-ugv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4Yv-8G-xaG" secondAttribute="trailing" id="pOf-6c-YmK"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="fhx-uO-BkV"/>
-                            </mask>
-                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="4QB-Dk-0KW" appends="YES" id="6K4-1R-ZjQ"/>
                         </connections>
