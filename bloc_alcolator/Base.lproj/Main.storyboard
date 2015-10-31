@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f01-Gf-3Nj">
+                                <rect key="frame" x="266" y="98" width="69" height="30"/>
+                                <state key="normal" title="Calculate!"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% Alcohol Content per Beer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Gd-XT-dfZ">
+                                <rect key="frame" x="20" y="20" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="ZrV-KY-JWz">
+                                <rect key="frame" x="18" y="60" width="564" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUg-QH-yJr">
+                                <rect key="frame" x="35" y="136" width="530" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="9Gd-XT-dfZ" secondAttribute="leading" id="0TN-nc-yBG"/>
+                            <constraint firstItem="f01-Gf-3Nj" firstAttribute="centerX" secondItem="ZrV-KY-JWz" secondAttribute="centerX" id="0te-5r-7p7"/>
+                            <constraint firstItem="9Gd-XT-dfZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3mA-34-qiD"/>
+                            <constraint firstItem="f01-Gf-3Nj" firstAttribute="top" secondItem="ZrV-KY-JWz" secondAttribute="bottom" constant="8" id="4so-Jh-f3u"/>
+                            <constraint firstItem="f01-Gf-3Nj" firstAttribute="centerX" secondItem="ZrV-KY-JWz" secondAttribute="centerX" id="5UR-cG-s2Q"/>
+                            <constraint firstItem="f01-Gf-3Nj" firstAttribute="top" secondItem="ZrV-KY-JWz" secondAttribute="bottom" constant="8" id="6Gy-pb-I0o"/>
+                            <constraint firstItem="DUg-QH-yJr" firstAttribute="top" secondItem="f01-Gf-3Nj" secondAttribute="bottom" constant="8" id="6pt-7T-lcL"/>
+                            <constraint firstItem="ZrV-KY-JWz" firstAttribute="top" secondItem="9Gd-XT-dfZ" secondAttribute="bottom" constant="8" id="DoH-BD-jrD"/>
+                            <constraint firstItem="f01-Gf-3Nj" firstAttribute="centerX" secondItem="ZrV-KY-JWz" secondAttribute="centerX" id="HLq-Ii-7HJ"/>
+                            <constraint firstItem="ZrV-KY-JWz" firstAttribute="centerX" secondItem="9Gd-XT-dfZ" secondAttribute="centerX" id="Htk-Xm-Vu6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Gd-XT-dfZ" secondAttribute="trailing" id="L4L-Vc-Lql"/>
+                            <constraint firstItem="ZrV-KY-JWz" firstAttribute="centerX" secondItem="9Gd-XT-dfZ" secondAttribute="centerX" id="LfX-eL-UZP"/>
+                            <constraint firstItem="DUg-QH-yJr" firstAttribute="centerX" secondItem="f01-Gf-3Nj" secondAttribute="centerX" id="R3H-lT-Hyg"/>
+                            <constraint firstItem="f01-Gf-3Nj" firstAttribute="top" secondItem="ZrV-KY-JWz" secondAttribute="bottom" constant="6" id="SaX-Ko-0If"/>
+                            <constraint firstItem="DUg-QH-yJr" firstAttribute="top" secondItem="f01-Gf-3Nj" secondAttribute="bottom" constant="8" id="ZZb-lh-ad4"/>
+                            <constraint firstItem="9Gd-XT-dfZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Zun-13-doj"/>
+                            <constraint firstItem="ZrV-KY-JWz" firstAttribute="width" secondItem="9Gd-XT-dfZ" secondAttribute="width" id="gOP-h4-4S0"/>
+                            <constraint firstItem="ZrV-KY-JWz" firstAttribute="top" secondItem="9Gd-XT-dfZ" secondAttribute="bottom" constant="10" id="muE-sI-oun"/>
+                            <constraint firstItem="ZrV-KY-JWz" firstAttribute="width" secondItem="9Gd-XT-dfZ" secondAttribute="width" id="rfX-l8-h84"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Zun-13-doj"/>
+                                <exclude reference="DoH-BD-jrD"/>
+                                <exclude reference="Htk-Xm-Vu6"/>
+                                <exclude reference="gOP-h4-4S0"/>
+                                <exclude reference="6pt-7T-lcL"/>
+                                <exclude reference="0te-5r-7p7"/>
+                                <exclude reference="4so-Jh-f3u"/>
+                                <exclude reference="5UR-cG-s2Q"/>
+                                <exclude reference="SaX-Ko-0If"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="4QB-Dk-0KW" appends="YES" id="6K4-1R-ZjQ"/>
                         </connections>
