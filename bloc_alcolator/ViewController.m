@@ -33,6 +33,8 @@
 
 - (IBAction)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider Value changed to %f", sender.value);
+    NSString *titleString = [NSString stringWithFormat:@"%f", self.beerCountSlider.value];
+    self.navigationItem.title = titleString;
     [self.beerPercentTextField resignFirstResponder];
 }
 
