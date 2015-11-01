@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2173A4C41BE5AFD100979378 /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173A4C31BE5AFD100979378 /* WhiskeyViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2173A4C71BE5CAA500979378 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173A4C61BE5CAA500979378 /* MainMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
 		21C296361BE41223006AFAF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C296351BE41223006AFAF1 /* main.m */; };
 		21C296391BE41223006AFAF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C296381BE41223006AFAF1 /* AppDelegate.m */; };
 		21C2963C1BE41223006AFAF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C2963B1BE41223006AFAF1 /* ViewController.m */; };
@@ -39,8 +38,6 @@
 /* Begin PBXFileReference section */
 		2173A4C21BE5AFD100979378 /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiskeyViewController.h; sourceTree = "<group>"; };
 		2173A4C31BE5AFD100979378 /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiskeyViewController.m; sourceTree = "<group>"; };
-		2173A4C51BE5CAA500979378 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		2173A4C61BE5CAA500979378 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		21C296311BE41223006AFAF1 /* bloc_alcolator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bloc_alcolator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C296351BE41223006AFAF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21C296371BE41223006AFAF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,8 +108,6 @@
 				21C296381BE41223006AFAF1 /* AppDelegate.m */,
 				21C2963A1BE41223006AFAF1 /* ViewController.h */,
 				21C2963B1BE41223006AFAF1 /* ViewController.m */,
-				2173A4C51BE5CAA500979378 /* MainMenuViewController.h */,
-				2173A4C61BE5CAA500979378 /* MainMenuViewController.m */,
 				2173A4C21BE5AFD100979378 /* WhiskeyViewController.h */,
 				2173A4C31BE5AFD100979378 /* WhiskeyViewController.m */,
 				21C2963D1BE41223006AFAF1 /* Main.storyboard */,
@@ -284,7 +279,6 @@
 				2173A4C41BE5AFD100979378 /* WhiskeyViewController.m in Sources */,
 				21C296391BE41223006AFAF1 /* AppDelegate.m in Sources */,
 				21C296361BE41223006AFAF1 /* main.m in Sources */,
-				2173A4C71BE5CAA500979378 /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

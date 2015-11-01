@@ -36,6 +36,7 @@
     NSString *titleString = [NSString stringWithFormat:@"%f", self.beerCountSlider.value];
     self.navigationItem.title = titleString;
     [self.beerPercentTextField resignFirstResponder];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
