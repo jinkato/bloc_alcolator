@@ -34,6 +34,10 @@
     
     NSString *beerText;
     
+    // change the badge value
+    int wholeNumber = ceil(numberOfWhiskeyGlassesForEquivalentAlcoholAmount);
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) wholeNumber]];
+    
     if (numberOfBeers == 1) {
         beerText = NSLocalizedString(@"beer", @"singular beer");
     } else {

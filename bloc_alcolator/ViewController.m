@@ -36,7 +36,7 @@
     NSString *titleString = [NSString stringWithFormat:@"%f", self.beerCountSlider.value];
     self.navigationItem.title = titleString;
     [self.beerPercentTextField resignFirstResponder];
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
+//    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
@@ -54,6 +54,10 @@
     float alcoholPercentageOfWine = 0.13;  // 13% is average
     float ouncesOfAlcoholPerWineGlass = ouncesInOneWineGlass * alcoholPercentageOfWine;
     float numberOfWineGlassesForEquivalentAlcoholAmount = ouncesOfAlcoholTotal / ouncesOfAlcoholPerWineGlass;
+    
+    // change the badge value
+    int wholeNumber = ceil(numberOfWineGlassesForEquivalentAlcoholAmount);
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) wholeNumber]];
     
     // decide whether to use "beer"/"beers" and "glass"/"glasses"
     NSString *beerText;
